@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h2{
+    font-weight: bold;
+}
+
+h1,
+h2,
+h3,
+p{
+    color: var(--quaternary-color);
+}

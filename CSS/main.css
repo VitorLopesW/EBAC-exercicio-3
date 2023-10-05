@@ -1,0 +1,207 @@
+@import url('root-color.css');
+@import url('reset.css');
+
+/* =============== BODY =============== */
+
+body {
+    background-color: var(--primary-color);
+}
+
+/* =============== WRAPPED SIDEBAR =============== */
+
+.wrapper .sidebar{
+    background: var(--primary-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 170px;
+    height: 100%;
+    padding: 20px 0;
+}
+
+.sidebar{
+    text-align: center;
+    color: var(--quaternary-color);
+    filter: drop-shadow(0 0 0.75rem rgb(0, 0, 0));
+}
+
+.sidebar h2{
+    font-size:150%;
+}
+
+.sidebar p{
+    font-size:100%;
+}
+
+.wrapper img{
+    width: 150px;
+    border-radius: 50%;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    color: var(--quaternary-color);
+}
+
+.sidebar ul {
+    padding-top: 50px;
+    padding-bottom: 310px;
+}
+
+.sidebar ul li{
+    height: auto;
+    padding: 20px;
+}
+
+.sidebar ul li:hover{
+    background-color: var(--tertiary-color);
+}
+
+.logo{
+    padding: 20px;
+}
+
+
+
+/* =============== MAIN-SITTE =============== */
+
+.main-site {
+    margin-left: 170px;
+}
+
+/* =============== MAIN =============== */
+
+main section img {
+    width: 500px;
+}
+
+main section h2 {
+    font-size: 50px;
+}
+
+
+/* =============== About Me =============== */
+
+.am{
+    background-color: var(--primary-color);
+}
+
+.am:hover{
+    background-color: var(--secondary-color);
+}
+.am:hover .about-me h2,
+.am:hover .about-me p{
+    color: var(--quaternary-color);
+}
+.about-me {
+    display: flex;
+    padding: 20px;
+}
+.about-me img{
+    margin-right: 15px;
+    height: 100%;
+}
+
+.about-me h2,
+.about-me p{
+    color: var(--tertiary-color);
+}
+
+
+/* =============== PROJECT GRID =============== */
+
+.project-grid:hover {
+    background-color: var(--secondary-color);
+}
+
+.project-grid {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+
+}
+
+
+.project-grid img:hover {
+    max-width: 100%;
+}
+
+.project-grid img {
+    width: 100%;
+    max-width: 99%;
+    transition: max-width 0.5s ease-in-out;
+}
+
+/* =============== FORM =============== */
+
+form input,
+form textarea,
+form button{
+    display: block;
+    width: 320px;
+    margin-bottom: 8px ;
+    padding: 8px;
+    color: var(--quaternary-color);
+}
+
+form textarea{
+    width: 640;
+    height: 640;
+    resize: none;
+}
+
+form button {
+    background-color: var(--tertiary-color);
+    color: var(--quaternary-color);
+    border: none;
+    cursor: pointer;
+}
+
+
+/* =============== AM-3 =============== */
+
+
+.am-3:hover {
+    background-color: vaR(--secondary-color);
+}
+
+.am-3 section {
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* =============== CONTACT ME =============== */
+
+.am-3 h2{
+    color: vaR(--tertiary-color);
+    margin-right: 30px;
+}
+.am-3:hover h2{
+    color: vaR(--quaternary-color);
+}
+.am-3:hover button{
+    background-color: vaR(--quaternary-color);
+    color: var(--tertiary-color);
+}
+
+.am-3 input,
+.am-3 textarea{
+    background-color: var(--tertiary-color);
+    color: var(--quaternary-color);
+}
+
+.am-3:hover input,
+.am-3:hover textarea{
+    background-color: var(--quaternary-color);
+    color: black;
+}
+
+/* =============== FOOTER =============== */
+
+footer{
+    background-color: var(--tertiary-color);
+    padding: 20px;
+    text-align: center;
+}
